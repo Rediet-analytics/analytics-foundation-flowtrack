@@ -21,3 +21,7 @@ Build a clean, reliable analytics setup from raw data to business metrics using:
 
 ## Status
 In progress – metrics and dashboards being added.
+
+## How to run
+- Upload CSVs to BigQuery dataset flowtrack_raw
+- Create clean views in flowtrack_analytics using SQL in sql/clean/
