@@ -25,3 +25,13 @@ In progress – metrics and dashboards being added.
 ## How to run
 - Upload CSVs to BigQuery dataset flowtrack_raw
 - Create clean views in flowtrack_analytics using SQL in sql/clean/
+
+## How views are created
+
+Each SQL file in this repo represents a BigQuery VIEW.
+Files contain SELECT statements only.
+
+To create or update a view in BigQuery:
+
+CREATE OR REPLACE VIEW `flowtrack-analytics.flowtrack_analytics.<view_name>` AS
+<contents of the SQL file>
